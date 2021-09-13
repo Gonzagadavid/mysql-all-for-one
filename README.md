@@ -99,7 +99,7 @@ Lembre-se que você pode consultar nosso conteúdo sobre [Git & GitHub](https://
 
 - Projeto individual.
 
-- Serão `X` dias de projeto.
+- Será `1` dia de projeto.
 
 - Data de entrega para avaliação final do projeto: `21/09/2021 - 14:00h`.
 
