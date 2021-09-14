@@ -41,7 +41,7 @@ describe('Desafios de manipulação de tabelas', () => {
     const lastOrderDetailsIdsQuery = (limit = 1) =>
       `SELECT id FROM northwind.order_details ORDER BY id DESC LIMIT ${limit};`;
 
-    describe.only("20 - Adicione à tabela 'order_details' um registro com 'order_id': 69, 'product_id': 80, 'quantity': 15.0000, 'unit_price': 15.0000, 'discount': 0, 'status_id': 2, 'date_allocated': NULL, 'purchase_order_id': NULL e 'inventory_id': 129", () => {
+    describe("20 - Adicione à tabela 'order_details' um registro com 'order_id': 69, 'product_id': 80, 'quantity': 15.0000, 'unit_price': 15.0000, 'discount': 0, 'status_id': 2, 'date_allocated': NULL, 'purchase_order_id': NULL e 'inventory_id': 129", () => {
       it('Verifica o desafio20', async () => {
         const challengeQuery = readFileSync('desafio20.sql', 'utf8').trim();
         const lastOrderDetailsId = (
@@ -61,7 +61,7 @@ describe('Desafios de manipulação de tabelas', () => {
       });
     });
 
-    describe.only("21 - Adicione com um único 'INSERT', duas linhas à tabela 'order_details' com os mesmos dados do requisito 20", () => {
+    describe("21 - Adicione com um único 'INSERT', duas linhas à tabela 'order_details' com os mesmos dados do requisito 20", () => {
       it('Verifica o desafio21', async () => {
         const challengeQuery = readFileSync('desafio21.sql', 'utf8').trim();
         const lastOrderDetailsId = (
@@ -86,7 +86,7 @@ describe('Desafios de manipulação de tabelas', () => {
     const countOrderDetailsByDiscountQuery = (discount) =>
       `SELECT COUNT(*) AS details_count FROM order_details WHERE discount = ${discount};`;
 
-    describe.only("22 - Atualize os dados na coluna 'discount' da tabela 'order_details' para 15", () => {
+    describe("22 - Atualize os dados na coluna 'discount' da tabela 'order_details' para 15", () => {
       it('Verifica o desafio22', async () => {
         const challengeQuery = readFileSync('desafio22.sql', 'utf8').trim();
 
@@ -100,7 +100,7 @@ describe('Desafios de manipulação de tabelas', () => {
       });
     });
 
-    describe.only("23 - Atualize os dados da coluna 'discount' da tabela 'order_details' para 30, onde o valor na coluna 'unit_price' seja menor que 10.0000", () => {
+    describe("23 - Atualize os dados da coluna 'discount' da tabela 'order_details' para 30, onde o valor na coluna 'unit_price' seja menor que 10.0000", () => {
       it('Verifica o desafio23', async () => {
         const challengeQuery = readFileSync('desafio23.sql', 'utf8').trim();
 
