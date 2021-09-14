@@ -1,4 +1,4 @@
 SELECT 
-    *
+  *
 FROM
-    northwind.products;
+  northwind.products;
