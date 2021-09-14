@@ -1,5 +1,5 @@
 SELECT 
-	*
+	 *
 FROM
-	northwind.products
+  northwind.products
 LIMIT 10 OFFSET 3;
