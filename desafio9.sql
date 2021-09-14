@@ -1,6 +1,6 @@
 SELECT 
-	notes
+	 notes
 FROM
-	northwind.purchase_orders
+	 northwind.purchase_orders
 WHERE
-	notes IS NOT NULL;
+ 	notes IS NOT NULL;
